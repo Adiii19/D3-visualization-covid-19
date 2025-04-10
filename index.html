@@ -2,13 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>COVID-19 World Map - D3.js</title>
+  <title>COVID-19 Global Visualization - D3.js</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h2>🌍 COVID-19 Global Visualization</h2>
   <div id="tooltip"></div>
   <svg width="960" height="500"></svg>
+
+  <div id="controls">
+    <label for="country-select">Select Countries:</label>
+    <select id="country-select" multiple></select>
+
+    <label for="metric-select">Select Metric:</label>
+    <select id="metric-select">
+      <option value="total_cases">Total Cases</option>
+      
+    </select>
+  </div>
+
+  <div id="line-chart-container">
+    <h3 id="comparison-title">Compare Trends</h3>
+    <svg id="line-chart" width="700" height="350"></svg>
+  </div>
+
+  <div id="bar-chart-container">
+    <h3>Top 10 Countries by Total COVID-19 Cases</h3>
+    <svg id="bar-chart" width="600" height="400"></svg>
+  </div>
+
+  
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://unpkg.com/topojson-client@3"></script>
