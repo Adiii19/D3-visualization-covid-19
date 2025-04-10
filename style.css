@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  svg {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  #tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    visibility: hidden;
+    pointer-events: none;
+    font-size: 13px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  }
+  
