@@ -1,24 +1,43 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f8f8f8;
-  }
-  
-  svg {
-    margin-top: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-  }
-  
-  #tooltip {
-    position: absolute;
-    background: white;
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 5px;
-    visibility: hidden;
-    pointer-events: none;
-    font-size: 13px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.2);
-  }
-  
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+svg {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+#tooltip {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  visibility: hidden;
+  pointer-events: none;
+  font-size: 13px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+#controls {
+  margin: 20px;
+}
+
+#country-select {
+  width: 200px;
+  height: 100px;
+}
+
+#line-chart-container, #bar-chart-container {
+  margin-top: 40px;
+}
+
+#line-chart, #bar-chart {
+  background: white;
+  border: 1px solid #ccc;
+}
+
